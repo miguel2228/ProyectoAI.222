@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inteligencia Artificial - CBTIS 222</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 75%, #00f2fe 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            min-height: 100vh;
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: auto auto auto auto;
+            gap: 15px;
+            padding: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+            min-height: 100vh;
+        }
+        
+        .frame {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            overflow-y: auto;
+        }
+    
+        .frame-header {
+            grid-column: 1 / 6;
+            text-align: center;
+            background: linear-gradient(135deg, #ff6b6b, #feca57);
+        }
+        
+        .logo {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        
+        .frame-header h1 {
+            color: white;
+            font-size: 2em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .frame-1 {
+            grid-column: 1 / 3;
+            background: linear-gradient(135deg, #a8edea, #fed6e3);
+        }
+        
+        .frame-2 {
+            grid-column: 3 / 6;
+            background: linear-gradient(135deg, #ffecd2, #fcb69f);
+        }
+        
+        .frame-3 {
+            grid-column: 1 / 3;
+            background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+        }
+        
+        .frame-4 {
+            grid-column: 3 / 4;
+            background: linear-gradient(135deg, #d4fc79, #96e6a1);
+        }
+        
+        .frame-5 {
+            grid-column: 4 / 6;
+            background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+        }
+        
+        .frame-6 {
+            grid-column: 1 / 3;
+            background: linear-gradient(135deg, #fdcbf1, #e6dee9);
+        }
+        
+        .frame-7 {
+            grid-column: 3 / 6;
+            background: linear-gradient(135deg, #a6c1ee, #fbc2eb);
+        }
+        
+        .frame-footer {
+            grid-column: 1 / 6;
+            text-align: center;
+            background: linear-gradient(135deg, #30cfd0, #330867);
+            color: white;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            border-bottom: 3px solid rgba(0,0,0,0.1);
+            padding-bottom: 10px;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .info-box {
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        
+        .info-box p {
+            margin-bottom: 8px;
+        }
+        
+        strong {
+            color: #2c3e50;
+        }
+        
+        .ventaja {
+            background-color: rgba(255, 255, 255, 0.6);
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border-left: 4px solid #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="frame frame-header">
+            <img src="logo.png" alt="Logo CBTIS 222" class="logo">
+            <h1>🤖 Inteligencia Artificial</h1>
+            <p style="color: white; font-size: 1.2em;"><strong>CBTIS 222</strong></p>
+        </div>
+        
+        <!-- Frame 1: Sobre la Carrera -->
+        <div class="frame frame-1">
+            <h2>📚 Sobre la Carrera</h2>
+            <p>La carrera de Inteligencia Artificial en el CBTIS 222 prepara profesionales técnicos capacitados para desarrollar, implementar y mantener sistemas inteligentes que transforman el futuro de la tecnología.</p>
+            <div class="info-box">
+                <p><strong>Duración:</strong> 3 años</p>
+                <p><strong>Modalidad:</strong> Presencial</p>
+                <p><strong>Turno:</strong> Matutino y Vespertino</p>
+                <p><strong>Requisitos:</strong> Certificado de secundaria</p>
+            </div>
+        </div>
+        
+        <!-- Frame 2: Qué Aprenderás -->
+        <div class="frame frame-2">
+            <h2>💡 ¿Qué Aprenderás?</h2>
+            <ul>
+                <li>Fundamentos de programación y algoritmos</li>
+                <li>Machine Learning y Deep Learning</li>
+                <li>Procesamiento de lenguaje natural</li>
+                <li>Visión por computadora</li>
+                <li>Desarrollo de chatbots y asistentes virtuales</li>
+                <li>Análisis de datos y Big Data</li>
+                <li>Redes neuronales artificiales</li>
+                <li>Robótica y automatización</li>
+                <li>Ética en Inteligencia Artificial</li>
+            </ul>
+        </div>
+        
+        <!-- Frame 3: Estudiar en el CBTIS 222 -->
+        <div class="frame frame-3">
+            <h2>🏫 Estudiar en el CBTIS 222</h2>
+            <p><strong>¿Por qué elegir nuestro plantel?</strong></p>
+            <ul>
+                <li>Laboratorios equipados con tecnología de punta</li>
+                <li>Docentes certificados y especializados</li>
+                <li>Convenios con empresas tecnológicas</li>
+                <li>Proyectos reales desde el primer semestre</li>
+                <li>Participación en competencias nacionales</li>
+                <li>Talleres y conferencias con expertos</li>
+                <li>Biblioteca especializada en tecnología</li>
+            </ul>
+        </div>
+        
+        <!-- Frame 4: Ventajas de la Carrera -->
+        <div class="frame frame-4">
+            <h2>⭐ Ventajas de la Carrera</h2>
+            <div class="ventaja">
+                <strong>🚀 Alta demanda laboral</strong>
+                <p>La IA es una de las áreas con mayor crecimiento</p>
+            </div>
+            <div class="ventaja">
+                <strong>💰 Salarios competitivos</strong>
+                <p>Profesionales bien remunerados desde el inicio</p>
+            </div>
+            <div class="ventaja">
+                <strong>🌎 Trabajo remoto</strong>
+                <p>Oportunidades en empresas de todo el mundo</p>
+            </div>
+            <div class="ventaja">
+                <strong>🔮 Tecnología del futuro</strong>
+                <p>Estarás a la vanguardia de la innovación</p>
+            </div>
+        </div>
+        
+        <!-- Frame 5: Perfil del Egresado -->
+        <div class="frame frame-5">
+            <h2>🎓 Perfil del Egresado</h2>
+            <p>Al finalizar la carrera, serás capaz de:</p>
+            <ul>
+                <li>Diseñar y desarrollar soluciones basadas en IA</li>
+                <li>Implementar modelos de aprendizaje automático</li>
+                <li>Analizar y procesar grandes volúmenes de datos</li>
+                <li>Crear aplicaciones inteligentes innovadoras</li>
+                <li>Trabajar en equipos multidisciplinarios</li>
+                <li>Optimizar procesos mediante algoritmos</li>
+                <li>Desarrollar sistemas de reconocimiento de patrones</li>
+            </ul>
+        </div>
+        
+        <!-- Frame 6: Campo Laboral -->
+        <div class="frame frame-6">
+            <h2>💼 Campo Laboral</h2>
+            <p><strong>Podrás trabajar en:</strong></p>
+            <ul>
+                <li>Empresas de desarrollo de software</li>
+                <li>Departamentos de innovación tecnológica</li>
+                <li>Consultorías de transformación digital</li>
+                <li>Startups de tecnología</li>
+                <li>Industria automotriz (vehículos autónomos)</li>
+                <li>Sector financiero (análisis predictivo)</li>
+                <li>Sector salud (diagnóstico asistido)</li>
+                <li>E-commerce y marketing digital</li>
+                <li>Como desarrollador independiente</li>
+            </ul>
+        </div>
+        
+        <!-- Frame 7: Proyectos y Certificaciones -->
+        <div class="frame frame-7">
+            <h2>🏆 Proyectos y Certificaciones</h2>
+            <p><strong>Durante tu formación realizarás:</strong></p>
+            <ul>
+                <li>Desarrollo de chatbots inteligentes</li>
+                <li>Sistemas de reconocimiento facial</li>
+                <li>Análisis predictivo de datos</li>
+                <li>Aplicaciones con asistentes virtuales</li>
+                <li>Modelos de clasificación y predicción</li>
+            </ul>
+            
+            <h2 style="margin-top: 20px;">📜 Certificaciones disponibles</h2>
+            <ul>
+                <li>Python para Data Science</li>
+                <li>Machine Learning Fundamentals</li>
+                <li>Cloud Computing básico</li>
+                <li>Desarrollo de aplicaciones con IA</li>
+            </ul>
+        </div>
+        
+        <!-- Footer -->
+        <div class="frame frame-footer">
+            <p>&copy; 2024 CBTIS 222 - Carrera de Inteligencia Artificial</p>
+            <p>¡Tu futuro en tecnología comienza aquí! 🚀</p>
+        </div>
+    </div>
+</body>
+</html>
